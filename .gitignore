@@ -1,0 +1,13 @@
+﻿Assembly-CSharp.csproj
+*.sln
+Unity.Rider.Editor.csproj
+Unity.TextMeshPro.csproj
+Unity.TextMeshPro.Editor.csproj
+Unity.Timeline.csproj
+Unity.Timeline.Editor.csproj
+*.csproj
+obj
+Logs
+Library
+.vscode
+UserSettings
