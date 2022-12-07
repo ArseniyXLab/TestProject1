@@ -6,13 +6,16 @@ public class Spawner : MonoBehaviour
 {
     [SerializeField]
 
-    private GameObject stonePrefab;
+    private GameObject[] stonePrefabs;
 
     public void Spawn()
     {
-        Vector3 position = transform.position;
-        Quaternion rotation = transform.rotation;
+        var position = transform.position;
+        var rotation = transform.rotation;
 
-        GameObject.Instantiate(stonePrefab, position, rotation);
+        var  index = Random.Range(0, stonePrefabs.Length);
+
+
+        GameObject.Instantiate(stonePrefabs[index], position, rotation);
     }
 }

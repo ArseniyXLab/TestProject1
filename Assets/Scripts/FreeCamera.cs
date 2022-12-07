@@ -62,7 +62,7 @@ public class FreeCamera : MonoBehaviour
 
 		if (Input.GetKey(KeyCode.Mouse1))
 		{
-			mainCamera.transform.localEulerAngles = new Vector3(-rotY, rotX, 0);
+		mainCamera.transform.localEulerAngles = new Vector3(-rotY, rotX, 0);
 		}
 
 		direction = new Vector3(h, 0, v);
