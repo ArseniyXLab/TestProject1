@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log("Start");
     }
-
-    // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        
+       if (Input.GetKeyDown(KeyCode.X))
+        {
+            Debug.Log("Key X pressed ");
+        }
     }
 }

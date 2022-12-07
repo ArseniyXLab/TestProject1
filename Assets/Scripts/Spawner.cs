@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
 
-    // Update is called once per frame
-    void Update()
+    private GameObject stonePrefab;
+
+    public void Spawn()
     {
-        
+        Vector3 position = transform.position;
+        Quaternion rotation = transform.rotation;
+
+        GameObject.Instantiate(stonePrefab, position, rotation);
     }
 }
